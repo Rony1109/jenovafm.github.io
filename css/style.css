@@ -32,8 +32,12 @@ html, body{
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	    background: url('../images/jenova.jpg') no-repeat 0px 0px;
-    background-size: cover;
-    background-attachment: fixed;
+    background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
 }
 body a {
 	text-decoration:none;
