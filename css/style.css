@@ -31,7 +31,7 @@ html, body{
 	margin:0;
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
-	    background: url('../images/jenova.jpg') no-repeat 0px 0px;
+	 /*   background: url('../images/jenova.jpg') no-repeat 0px 0px;*/
    
   /* Full height */
   height: 100%;
@@ -58,7 +58,7 @@ a:hover{
 }
 @font-face {
    font-family: 'PoiretOne-Regular';
-   src: url(../fonts/PoiretOne-Regular.ttf)format('truetype');
+ src: url(../fonts/PoiretOne-Regular.ttf)format('truetype');
 }
 
 h1,h2,h3,h4,h5,h6{
