@@ -17,7 +17,35 @@
 </head>
 <body>
 <!-- main -->
+<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
 
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Billie Eilish - Senorita",
+			mp3:"https://raw.githubusercontent.com/jenovafm/jenovafm.github.io/master/senorita.mp3",
+			oga:"https://raw.githubusercontent.com/jenovafm/jenovafm.github.io/master/senorita.mp3"
+		}
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 						<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 							<div class="jp-type-playlist">
@@ -60,35 +88,7 @@
 		</div>
 <!-- //main -->
 <!-- script for play-list -->
-<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
 
-	new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_1",
-		cssSelectorAncestor: "#jp_container_1"
-	}, [
-		
-		{
-			title:"Billie Eilish - Senorita",
-			mp3:"https://raw.githubusercontent.com/jenovafm/jenovafm.github.io/master/senorita.mp3",
-			oga:"https://raw.githubusercontent.com/jenovafm/jenovafm.github.io/master/senorita.mp3"
-		}
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
-	});
-});
-//]]>
-</script>
 <!-- //script for play-list -->
 
 </body>
